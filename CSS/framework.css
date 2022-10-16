@@ -8,10 +8,16 @@
 .rad-6 {
     border-radius: 6px;
 }
+.rad-10 {
+    border-radius: 10px;
+}
 /* end box  */
 /* start padding + margin  */
 .p-10 {
     padding: 10px;
+}
+.p-15 {
+    padding: 15px;
 }
 .p-20 {
     padding: 20px;
@@ -44,3 +50,15 @@
     font-size: 14px;
 }
 /* end font  */
+/* start width + height  */
+.w-full {
+    width: 100%;
+}
+/* end width + height  */
+/* start Components  */
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* end Components  */
