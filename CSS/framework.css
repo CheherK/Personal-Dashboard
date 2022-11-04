@@ -2,14 +2,34 @@
 .d-flex {
     display: flex;
 }
-.align-center {
+.f-align-center {
     align-items: center;
+}
+.f-space-between {
+    justify-content: space-between;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+@media (max-width: 767px) {
+    .d-block-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
 }
 .rad-6 {
     border-radius: 6px;
 }
 .rad-10 {
     border-radius: 10px;
+}
+.rad-50 {
+    border-radius: 50%;
 }
 /* end box  */
 /* start padding + margin  */
@@ -36,15 +56,26 @@
 .c-black {
     color: black;
 }
+.bg-eee {
+    background-color: #eee;
+}
 /* end color  */
 /* start position  */
 .p-relative {
     position: relative;
 }
+.p-absolute {
+    position: absolute;
+}
 /* end position  */
 /* start font  */
 .txt-c {
     text-align: center;
+}
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
 }
 .fs-14 {
     font-size: 14px;
