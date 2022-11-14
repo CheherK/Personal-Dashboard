@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- render normally all elements -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- framework css file  -->
+    <link rel="stylesheet" href="CSS/framework.css">
+    <!-- fontawesome Library  -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- main CSS file  -->
+    <link rel="stylesheet" href="CSS/dashboard.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page d-flex">
+        <!-- start sidebar  -->
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0">Cheher</h3>
+            <ul>
+                <li>
+                    <a class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="fa-solid fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex f-align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="files.html">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex f-align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end sidebar  -->
+        <!-- start main content  -->
+        <div class="content w-full">
+            <!-- start head  -->
+            <div class="head bg-white p-15 flex-between">
+                <div class="search p-relative">
+                    <input type="search" placeholder="Type A Keyword" class="p-10 rad-10">
+                </div>
+                <div class="icons d-flex f-align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img src="images/avatar.jpg" class="rad-50" alt="">
+                </div>
+            </div>
+            <h1 class="p-relative">Profile</h1>
+            <!-- end head  -->
+            <!-- start profile page  -->
+            <div class="profile-page">
+                <!-- start profile information -->
+                <div class="profile-info bg-white rad-10 d-flex">
+                    <div class="profile-card flex-center gap-20">
+                        <img class="rad-50 w-100" src="images/avatar.jpg" alt="profile picture">
+                        <h3>Cheher Kallebi</h3>
+                        <p class="c-grey fs-15">Level 20</p>
+                        <div class="progress p-relative">
+                            <span></span>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                            <i class="fa-solid fa-star c-orange fs-13"></i>
+                        </div>
+                        <p class="c-grey fs-13">45 Rating</p>
+                    </div>
+                    <div class="info txt-c-mobile">
+                        <div class="info-row p-20">
+                            <h4>General Information</h4>
+                            <div class="cordonate d-flex">
+                                <p class="fs-14"><span class="c-grey fs-13">Full Name: </span> Cheher Kallebi</p>
+                                <p class="fs-14"><span class="c-grey fs-13">Gender: </span> Male</p>
+                                <p class="fs-14"><span class="c-grey fs-13">Country: </span> Tunisia</p>
+                            </div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                        <div class="info-row p-20">
+                            <h4>Personal Information</h4>
+                            <div class="cordonate d-flex">
+                                <p class="fs-14"><span class="c-grey fs-13">Email: </span> Cheher Kallebi</p>
+                                <p class="fs-14"><span class="c-grey fs-13">phone: </span> +216222806865</p>
+                                <p class="fs-14"><span class="c-grey fs-13">Date Of Birth: </span> 13/10/1999</p>
+                            </div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                        <div class="info-row p-20">
+                            <h4>Job Information</h4>
+                            <div class="cordonate d-flex">
+                                <p class="fs-14"><span class="c-grey fs-13">Title: </span> Full Stack Developer</p>
+                                <p class="fs-14"><span class="c-grey fs-13">Programming Language: </span> Java</p>
+                                <p class="fs-14"><span class="c-grey fs-13">Years Of Experience: </span> +1</p>
+                            </div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                        <div class="info-row p-20">
+                            <h4>Belling Information</h4>
+                            <div class="cordonate d-flex">
+                                <p class="fs-14"><span class="c-grey fs-13">Payment Method: </span> Paypal</p>
+                                <p class="fs-14"><span class="c-grey fs-13">Email: </span> cheher kallebi</p>
+                                <p class="fs-14"><span class="c-grey fs-13">Subscription: </span> Monthly</p>
+                            </div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- end profile information -->
+                <!-- start Skills + Activities -->
+                <div class="skills-activities d-flex gap-20">
+                    <!-- start my skills  -->
+                    <div class="my-skills bg-white rad-10 p-20">
+                        <h2 class="pb-15">My Skills</h2>
+                        <p class="c-grey fs-14">Complete Skills List</p>
+                        <div class="skills-box d-flex ptb-20 p-relative">
+                            <span class="fs-15 bg-eee p-10 rad-6">HTML</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">CSS</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">JavaScript</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">React</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Spring Boot</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">NodeJs</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Java</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Python</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">C</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Jest</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Jasmine</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Sass</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Pugjs</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">TypeScript</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">Django</span>
+                            <span class="fs-15 bg-eee p-10 rad-6">C++</span>
+                        </div>
+                    </div>
+                    <!-- end my skills  -->
+                    <!-- start latest activities  -->
+                    <div class="activities bg-white rad-10 p-20">
+                        <h2 class="pb-15">Latest Activities</h2>
+                        <p class="c-grey fs-14">Latest Activities Done By The User</p>
+                        <div class="activities-box">
+                            <div class="row d-flex">
+                                <img src="images/activity-01.png" alt="latest activities">
+                                <div class="information">
+                                    <div class="head flex-between">
+                                        <span>Store</span>
+                                        <span>18:05</span>
+                                    </div>
+                                    <div class="detail flex-between">
+                                        <span class="c-grey fs-14">Bought The Mastering Python Course</span>
+                                        <span class="c-grey fs-14">Yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <img src="images/activity-02.png" alt="latest activities">
+                                <div class="information">
+                                    <div class="head flex-between">
+                                        <span>Academy</span>
+                                        <span>18:45</span>
+                                    </div>
+                                    <div class="detail flex-between">
+                                        <span class="c-grey fs-14">Got The PHP Certificate</span>
+                                        <span class="c-grey fs-14">Yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <img src="images/activity-03.png" alt="latest activities">
+                                <div class="information">
+                                    <div class="head flex-between">
+                                        <span>Badges</span>
+                                        <span>17:05</span>
+                                    </div>
+                                    <div class="detail flex-between">
+                                        <span class="c-grey fs-14">Unlocked The 10 Skills Badge</span>
+                                        <span class="c-grey fs-14">Yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex">
+                                <img src="images/activity-01.png" alt="latest activities">
+                                <div class="information">
+                                    <div class="head flex-between">
+                                        <span>Store</span>
+                                        <span>14:00</span>
+                                    </div>
+                                    <div class="detail flex-between">
+                                        <span class="c-grey fs-14">Bought The Mastering TypeScript Course</span>
+                                        <span class="c-grey fs-14">Yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end latest activities  -->
+                </div>
+                <!-- end Skills + Activities -->
+            </div>
+            <!-- end profile page -->
+        </div>
+        <!-- end main content -->
+    </div>
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>
