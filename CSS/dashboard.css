@@ -986,3 +986,463 @@ body {
     padding: 10px;
 }
 /* end activities  */
+
+/* *********************************************************** */
+
+/* *********************** Projects page ********************* */
+
+/* *********************************************************** */
+
+/* start Projects page  */
+.projects-page {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+    .projects-page {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.projects-page .project-box {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    line-height: 1.7;
+}
+.projects-page .project-box h4 {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.projects-page .project-box .description {
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey-color);
+    font-size: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    gap: 10px;
+}
+.projects-page .project-box .description p {
+    flex: 1;
+}
+@media (max-width: 992px) {
+    .projects-page .project-box .description{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+.projects-page .project-box .links {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.projects-page .project-box .links a {
+    padding: 5px 7px;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: 13px;
+    color: white;
+    background-color: var(--blue-alt-color);
+}
+.projects-page .project-box .links a:hover {
+    box-shadow: 0 0 5px var(--blue-alt-color);
+}
+.projects-page .project-box .skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.projects-page .project-box .skills span {
+    padding: 5px 7px;
+    border: 1px solid #eee;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.projects-page .project-box .skills span i {
+    margin-right: 7px;
+}
+.projects-page .project-box .skills span:nth-child(1) {
+    color: var(--green-color);
+}
+.projects-page .project-box .skills span:nth-child(2) {
+    color: var(--orange-color);
+}
+.projects-page .project-box .skills span:nth-child(3) {
+    color: var(--red-color);
+}
+.projects-page .project-box .statics {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    align-items: center;
+    gap: 30%;
+}
+.projects-page .project-box .statics .progress {
+    flex: 1;
+    height: 5px;
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    position: relative;
+}
+.projects-page .project-box .statics .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    height: 5px;
+}
+.projects-page .project-box .statics p {
+    color: var(--grey-color);
+}
+/* end profile page  */
+
+/* *********************************************************** */
+
+/* *********************** Courses page ********************* */
+
+/* *********************************************************** */
+
+.courses-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .courses-page {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.courses-page .course-box {
+    line-height: 1.5;
+    position: relative;
+}
+.courses-page .course-box::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/team-01.png);
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    left: 25px;
+    top: 25px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.courses-page .course-box:nth-child(2):before {
+    background-image: url(../images/team-02.png);
+}
+.courses-page .course-box:nth-child(3):before {
+    background-image: url(../images/team-03.png);
+}
+.courses-page .course-box:nth-child(4):before {
+    background-image: url(../images/team-04.png);
+}
+.courses-page .course-box img {
+    border-radius: 10px 10px 0 0;
+}
+.courses-page .course-box .description {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.courses-page .course-box .description::before {
+    position: absolute;
+    content: 'Course Info';
+    background-color: var(--blue-alt-color);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+
+/* *********************************************************** */
+
+/* *********************** Friends page ********************* */
+
+/* *********************************************************** */
+
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .friends-page {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.friends-page .friend-card .contact .icons {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.friends-page .friend-card .contact .icons i {
+    transition: .3s;
+}
+.friends-page .friend-card .contact .icons i:hover {
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends-page .friend-card .contact img {
+    margin-top: 20px;
+    box-shadow: var(--main-shadow);
+}
+.friends-page .friend-card .statics {
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.friends-page .friend-card .footer .buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.friends-page .friend-card .footer .buttons span {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* *********************************************************** */
+
+/* *********************** Files page ********************* */
+
+/* *********************************************************** */
+
+.files-page {
+    flex-direction: row-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+@media (max-width: 767px) {
+    .files-page {
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+/* start file statistics  */
+.files-page .files-statics {
+    min-width: 300px;
+
+}
+@media (max-width: 767px) {
+    .files-page .files-statics {
+        min-width: 200px;
+        margin-bottom: 20px;
+    }
+}
+.files-page .files-statics .file-box {
+    border: 1px solid #eee;
+    transition: .4s;
+    cursor: pointer;
+}
+.files-page .files-statics .file-box i {   
+    transition: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.files-page .files-statics .file-box .description {
+    flex: 1;
+}
+.files-page .files-statics .file-box:nth-of-type(1):hover i {
+    background-color: white;
+    color: var(--blue-color);
+}
+.files-page .files-statics .file-box:nth-of-type(2):hover i {
+    background-color: white;
+    color: var(--green-color);
+}
+.files-page .files-statics .file-box:nth-of-type(3):hover i {
+    background-color: white;
+    color: var(--red-color);
+}
+.files-page .files-statics .file-box:nth-of-type(4):hover i {
+    background-color: white;
+    color: var(--orange-color);
+}
+.files-page .files-statics .upload {
+    padding: 10px 15px;
+    background-color: var(--blue-color);
+    color: white;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+.files-page .files-statics .upload:hover {
+    background-color: var(--blue-alt-color);
+    box-shadow: 0 0 10px var(--blue-alt-color);
+}
+.files-page .files-statics .upload i {
+    margin-right: 10px;
+    transition: .3s;
+}
+.files-page .files-statics .upload:hover i {
+    animation: upload-button-animation .3s alternate infinite;
+}
+@keyframes upload-button-animation {
+    100% {
+        transform: translateY(-4px);
+    }
+}
+/* end file statistics  */
+/* start files cards */
+.files-page .files-cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    flex: 1;
+}
+.files-page .files-cards .file-card {
+    text-align: center;
+    position: relative;
+}
+.files-page .files-cards .file-card {
+    text-align: center;
+    position: relative;
+    min-width: 150px;
+
+}
+.files-page .files-cards .file-card img {
+    width: 70px;
+    transition: .3s;
+}
+.files-page .files-cards .file-card:hover img {
+    animation: file-card-animation .25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes file-card-animation {
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+.files-page .files-cards .file-card i {
+    left: 20px;
+    top: 20px;
+}
+.files-page .files-cards .file-card .info {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+/* end files cards */
+
+/* *********************************************************** */
+
+/* *********************** Plans page ********************* */
+
+/* *********************************************************** */
+
+.plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .plans-page {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+
+.plans-page .plan .head {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    border: 3px solid white;
+    outline: 3px solid;
+    margin: 3px 3px 10px 3px;
+    border-radius: 10px 10px 0 0;
+}
+.plans-page .plan .head h3 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.plans-page .plan .head p {
+    font-size: 40px;
+    letter-spacing: 1px;
+    position: relative;
+}
+.plans-page .plan .head p::before {
+    position: absolute;
+    content: '$';
+    left: -15px;
+    top: -5px;
+    color: white;
+    font-size: 25px;
+}
+.plans-page .plan .body {
+    padding: 0 20px;
+}
+.plans-page .plan .body > div {
+    padding: 15px 0;
+    border-bottom:1px solid #eee ;
+}
+.plans-page .plan .body > div > p {
+    font-size: 14px;
+}
+.plans-page .plan > span {
+    display: inline-block;
+    margin: 15px 20px;
+}
+.plans-page .plan:nth-of-type(1) .head {
+    background-color: var(--green-color);
+    outline-color: var(--green-color);
+}
+.plans-page .plan:nth-of-type(1) > span {
+    background-color: var(--green-color);
+}
+.plans-page .plan:nth-of-type(2) .head {
+    background-color: var(--blue-color);
+    outline-color: var(--blue-color);
+}
+.plans-page .plan:nth-of-type(2) > span {
+    background-color: var(--blue-color);
+}
+.plans-page .plan:nth-of-type(3) .head {
+    background-color: var(--red-color);
+    outline-color: var(--red-color);
+}
+.plans-page .plan:nth-of-type(3) > span {
+    background-color: var(--red-color);
+}

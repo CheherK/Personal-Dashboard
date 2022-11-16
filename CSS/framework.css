@@ -35,6 +35,9 @@
 .gap-20 {
     gap: 20px;
 }
+.gap-10 {
+    gap: 10px;
+}
 @media (max-width: 767px) {
     .d-block-mobile {
         display: block;
@@ -92,6 +95,9 @@
 }
 .mt-15 {
     margin-top: 15px;
+}
+.mr-5 {
+    margin-right: 5px;
 }
 .mr-10 {
     margin-right: 10px;
