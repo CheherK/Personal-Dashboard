@@ -6,20 +6,18 @@ fetch('https://api.github.com/users/CheherK/repos')
 })
 .then((data) => {
    let myData = data;
-   let projectsPage = document.querySelector(".projects-page");
+   const projectsPage = document.querySelector(".projects-page");
    quickSort(myData, 0, myData.length - 1);
-   console.log(myData);
    myData.reverse();
-   let startTime = performance.now();
 
    myData.forEach(rep => {
-      let projectName = rep.name.split("-").join(" ").trim();
-      let projectdesc = rep.description;
-      let projectDate = rep.created_at.split("T")[0];
-      let projectLive = "https://cheherk.github.io/" + rep.name;
-      let projectCode = "https://github.com/CheherK/" + rep.name;
-      let projectProgress = getRandomInt(50, 100);
-      let projectPrice = getRandomInt(100, 1000);
+      const projectName = rep.name.split("-").join(" ").trim();
+      const projectdesc = rep.description;
+      const projectDate = rep.created_at.split("T")[0];
+      const projectLive = "https://cheherk.github.io/" + rep.name;
+      const projectCode = "https://github.com/CheherK/" + rep.name;
+      const projectProgress = getRandomInt(50, 100);
+      const projectPrice = getRandomInt(100, 1000);
       let beforeColor;
       if(projectProgress < 70) {
          beforeColor = "bg-red"
@@ -30,8 +28,9 @@ fetch('https://api.github.com/users/CheherK/repos')
       if(projectProgress > 89) {
          beforeColor = "bg-green"
       }
-      projectsPage.innerHTML += `
-      <div class="project-box">
+      const projectBox = document.createElement("div");
+      projectBox.className = "project-box";
+      projectBox.innerHTML = `
          <h4>${projectName}</h4>
          <div class="description">
             <p>${projectdesc || projectName+" Description"}</p>
@@ -50,15 +49,15 @@ fetch('https://api.github.com/users/CheherK/repos')
             <div class="progress" data-spanWidth="${projectProgress}%" data-spanColor="${beforeColor}"><span></span></div>
             <p>$${projectPrice}</p>
          </div>
-      </div>
       `;
-      let progress = document.querySelectorAll(".projects-page .project-box .statics .progress");
-      let progressSpan = progress[progress.length - 1].firstChild;
-      progressSpan.style.width = progress[progress.length - 1].dataset.spanwidth;
-      progressSpan.classList.add(progress[progress.length - 1].dataset.spancolor);
+      projectsPage.appendChild(projectBox);
    });
-   let endTime = performance.now();
-   console.log(endTime - startTime);
+   const progress = document.querySelectorAll(".projects-page .project-box .statics .progress");
+   progress.forEach((elem) => {
+      const progressSpan = elem.firstChild;
+      progressSpan.style.width = elem.dataset.spanwidth;
+      progressSpan.classList.add(elem.dataset.spancolor);     
+   })
 });
 
 //sorting myData by created date with quick sort algorithm 
