@@ -1,4 +1,4 @@
-// fetching data from github api 
+// fetching data from github  
 fetch('https://api.github.com/users/CheherK/repos')
 .then((response) => {
    console.log(response);
